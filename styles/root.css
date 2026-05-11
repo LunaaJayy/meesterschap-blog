@@ -1,0 +1,46 @@
+:root {
+	color-scheme: light dark;
+	--bg-parchment: light-dark(#f5f0e8, #1c1916);
+	--bg-section: light-dark(#fdfaf5, #252118);
+	--border: light-dark(#e2d9c8, #3a342a);
+	--ink-style: light-dark(#2e2a24, #ede8df);
+	--ink-text: light-dark(#2e2a24, #ede8df);
+	--pencil-text: light-dark(#6b6258, #a89f94);
+	--pencil-style: light-dark(#6b6258, #a89f94);
+	--green-accent: light-dark(#7a9e7e, #7a9e7e);
+	--red-accent: light-dark(#cc785c, #cc785c);
+	--red-mark: light-dark(#d89883, #d89883);
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-snap-type: y mandatory;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Gaegu", sans-serif;
+	font-weight: 400;
+}
+
+body {
+	scroll-snap-type: y mandatory;
+	background-color: var(--bg-parchment);
+	background-image: radial-gradient(var(--ink-style) 0.5px, transparent 0);
+	background-size: 30px 30px;
+	font-family: "Fuzzy Bubbles", sans-serif;
+	color: var(--ink-text);
+}
+
+.drawn-border {
+	border: solid 6px;
+	border-top-left-radius: 255px 15px;
+	border-top-right-radius: 15px 225px;
+	border-bottom-right-radius: 225px 15px;
+	border-bottom-left-radius: 15px 255px;
+}
