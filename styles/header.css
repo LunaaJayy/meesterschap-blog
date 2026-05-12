@@ -6,8 +6,8 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 7rem;
-	position: relative;
+	padding: 2rem 0 7rem 0;
+	/* position: relative; */
 }
 
 header>svg {

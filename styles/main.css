@@ -291,31 +291,36 @@ a {
 }
 
 .teksten {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-template: repeat(8, 1fr) / 0.5fr repeat(3, 1fr) 0.5fr;
+	padding: 1rem;
+	row-gap: 1rem;
 
-	h2{
-		order: 1;
+	h2 {
 		width: 80vw;
 		text-align: center;
+		grid-area: 4 / 2 / 6 / 5;
 	}
 
-	a {
+	.memo {
+		grid-area: 2 / 2 / 3 / 5;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		justify-self: center;
 		width: 200px;
 		padding: 1rem;
 		background-color: var(--bg-section);
 		position: relative;
 
-		svg{
+		svg {
 			width: 1.5rem;
 			fill: var(--red-mark);
 		}
 	}
 
-	a::before {
+	.memo::before {
+		/* van: https://codepen.io/wheatup/pen/GRyxmRb */
 		display: block;
 		content: "";
 		position: absolute;
@@ -328,5 +333,42 @@ a {
 		transform-origin: bottom left;
 		transform: translate(8px, 2px) rotate(1deg);
 		filter: blur(2px);
+	}
+
+	.sticker-leerdoel {
+		/* add this? https://dev.to/jh3y/circular-text-with-css-57jf */
+		border-radius: 50%;
+		width: 5rem;
+		height: 5rem;
+		text-align: center;
+		justify-self: center;
+		border: solid 0.5rem var(--bg-section);
+		box-shadow:
+			rgba(0, 0, 0, 0.12) 0px 1px 3px,
+			rgba(0, 0, 0, 0.24) 0px 1px 2px;
+		display: flex;	
+		justify-content: center;
+		align-items: center;
+
+		&[href="html-tekst/leerdoel1.html"] {
+			grid-area: 6 / 2 / 7 / 3;
+			background-color: var(--red-accent);
+		}
+
+		&[href="html-tekst/leerdoel2.html"] {
+			grid-area: 7 / 3 / 8 / 4;
+			background-color: var(--green-accent);
+		}
+
+		&[href="html-tekst/leerdoel3.html"] {
+			grid-area: 6 / 4 / 7 / 5;
+			background-color: var(--red-accent);
+		}
+
+		p {
+			font-family: "Gaegu", sans-serif;
+			font-size: 2rem;
+			color: var(--text-light);
+		}
 	}
 }
