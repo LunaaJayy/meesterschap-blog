@@ -39,7 +39,7 @@ body {
 }
 
 .drawn-border {
-	border: solid 6px;
+	border: solid 6px var(--red-accent);
 	border-top-left-radius: 255px 15px;
 	border-top-right-radius: 15px 225px;
 	border-bottom-right-radius: 225px 15px;

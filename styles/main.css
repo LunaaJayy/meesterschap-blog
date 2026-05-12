@@ -350,17 +350,17 @@ a {
 		justify-content: center;
 		align-items: center;
 
-		&[href="html-tekst/leerdoel1.html"] {
+		&[href="tekst/leerdoel1.html"] {
 			grid-area: 6 / 2 / 7 / 3;
 			background-color: var(--red-accent);
 		}
 
-		&[href="html-tekst/leerdoel2.html"] {
+		&[href="tekst/leerdoel2.html"] {
 			grid-area: 7 / 3 / 8 / 4;
 			background-color: var(--green-accent);
 		}
 
-		&[href="html-tekst/leerdoel3.html"] {
+		&[href="tekst/leerdoel3.html"] {
 			grid-area: 6 / 4 / 7 / 5;
 			background-color: var(--red-accent);
 		}

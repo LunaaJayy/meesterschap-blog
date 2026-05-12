@@ -1,15 +1,84 @@
 header {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 1rem;
+	h1 {
+        font-size: 3rem;
+        font-weight: 700;
+		grid-area: 2 / 1 / 3 / 3;
+    	}
+
+	h2 {
+		grid-area: 1 / 1 / 2 / 2;
+		align-self: end;
+        font-family: "Fuzzy Bubbles", sans-serif;
+        font-size: 1rem;
+        color: var(--pencil-text);
+	}
+
 	a {
-        
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		color: var(--bg-section);
+		background-color: var(--green-accent);
+		width: 40vw;
+		padding: 0.6rem 0;
+		border-radius: 0.8rem;
+		border: solid var(--bg-section) 0.5rem;
+		box-shadow:
+			rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+			rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		grid-area: 1 / 2 / 2 / 3;
+		justify-self: center;
+		align-self: end;
 
 		div {
 			width: 1rem;
 			height: 1rem;
-			mask-image: url(../media/pijl-links.svg);
+			mask-image: url(../media/pijl-rechts.svg);
 			mask-size: contain;
 			mask-repeat: no-repeat;
 			mask-position: center;
-			background-color: var(--pencil-style);
+			background-color: var(--bg-section);
+            margin-left: .5rem;
+			rotate: -45deg;
 		}
 	}
+}
+
+main {
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+
+    h2 {
+    	font-weight: 600;
+        font-size: 2rem;
+    	text-decoration: wavy underline var(--green-accent) 2px;
+
+
+        &:nth-of-type(1) {
+            text-align: center;
+
+        }
+         &:nth-of-type(2){
+            margin-top: 2rem;
+            font-size: 1.7rem;
+         }
+    }
+    div {
+        display: grid;
+        gap: 1rem;
+        margin: 1rem 0;
+
+        img:last-of-type {
+            justify-self: right;
+        }
+    }
+    img {
+        width: 70vw;
+    }
+    p {
+        margin-bottom: 1rem;
+    }
 }
