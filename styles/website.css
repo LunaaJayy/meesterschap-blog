@@ -1,6 +1,6 @@
 header {
 	display: grid;
-	grid-template: 1fr 1fr / 1fr 1fr;
+	grid-template: .5fr 1fr / 1fr 1fr;
     padding: 1rem;
 	h1 {
         font-size: 3rem;
@@ -76,7 +76,8 @@ main {
         }
     }
     img {
-        width: 70vw;
+        width: 75vw;
+		padding: .3rem;
     }
     p {
         margin-bottom: 1rem;
