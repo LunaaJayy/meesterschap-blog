@@ -320,10 +320,10 @@ a {
 		width: 80vw;
 		text-align: center;
 		grid-area: 4 / 2 / 6 / 5;
+		align-content: center;
 	}
 
 	.memo {
-		grid-area: 2 / 2 / 3 / 5;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -332,6 +332,21 @@ a {
 		padding: 1rem;
 		background-color: var(--bg-section);
 		position: relative;
+
+		&:first-of-type {
+			grid-area: 2 / 2 / 3 / 5;
+			background-color: var(--bg-section);
+			margin-right: 4rem;
+		}
+		&:nth-of-type(2) {
+			grid-area: 3 / 2 / 4 / 5;
+			margin-left: 4rem;
+			mark {
+				background-color: var(--red-mark);
+				padding: 4px;
+				border-radius: 2px;
+			}
+		}
 
 		svg {
 			width: 1.5rem;
@@ -366,7 +381,7 @@ a {
 		box-shadow:
 			rgba(0, 0, 0, 0.12) 0px 1px 3px,
 			rgba(0, 0, 0, 0.24) 0px 1px 2px;
-		display: flex;	
+		display: flex;
 		justify-content: center;
 		align-items: center;
 
