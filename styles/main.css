@@ -108,6 +108,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	padding-top: 2rem;
+	height: 100vh;
+	overflow-y: auto;
 
 	h2 {
 		text-align: center;
@@ -251,7 +253,7 @@ a {
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
-	padding: 2rem 0;
+	padding: .5rem 0;
 	anchor-name: --carousel;
 
 	scroll-marker-group: after;
@@ -406,4 +408,9 @@ a {
 			color: var(--text-light);
 		}
 	}
+}
+
+
+@media (height > 800px) {
+	
 }
