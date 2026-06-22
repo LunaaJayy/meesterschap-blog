@@ -397,6 +397,14 @@ a {
 		justify-content: center;
 		align-items: center;
 
+		&:hover {
+			transform: scale(1.1) translateY(-10px);
+			box-shadow:
+			rgba(0, 0, 0, 0.06) 0px 8px 3px,
+			rgba(0, 0, 0, 0.12) 0px 8px 2px;
+			transition: transform .2s ease-in-out;
+		}
+
 		&[href="tekst/leerdoel1.html"] {
 			grid-area: 6 / 2 / 7 / 3;
 			background-color: var(--red-accent);
