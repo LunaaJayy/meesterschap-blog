@@ -1,0 +1,17 @@
+.dark-mode, .light-mode {
+	fill: var(--ink-style);
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	border: none;
+	background-color: unset;
+}
+
+.dark-mode {
+	width: 3rem;
+    display: none;
+}
+
+.light-mode {
+	width: 3rem;
+}

@@ -10,7 +10,21 @@
 	--green-accent: light-dark(#7a9e7e, #7a9e7e);
 	--red-accent: light-dark(#cc785c, #cc785c);
 	--red-mark: light-dark(#d89883, #d89883);
-	--text-light: light-dark(#fdfaf5, #252118)
+	--text-light: light-dark(#fdfaf5, #252118);
+}
+
+.dark {
+	--bg-parchment: #1c1916;
+	--bg-section: #252118;
+	--border: #3a342a;
+	--ink-style: #ede8df;
+	--ink-text: #ede8df;
+	--pencil-text: #a89f94;
+	--pencil-style: #a89f94;
+	--green-accent: #7a9e7e;
+	--red-accent: #cc785c;
+	--red-mark: #d89883;
+	--text-light: #252118;
 }
 
 * {
@@ -57,16 +71,16 @@ aside {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-    width: 100vw;
+	width: 100vw;
 
 	a {
 		color: var(--pencil-text);
 		text-decoration: none;
 		display: flex;
-        background-color: var(--bg-section);
-        border-top: solid .2rem var(--border);
-        width: 100%;
-        padding: 1rem;
+		background-color: var(--bg-section);
+		border-top: solid 0.2rem var(--border);
+		width: 100%;
+		padding: 1rem;
 	}
 	div {
 		width: 1rem;
