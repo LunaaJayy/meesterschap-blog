@@ -1,3 +1,9 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 header {
 	svg {
 		stroke: var(--green-accent);
@@ -9,9 +15,11 @@ h1 {
 	font-size: 3rem;
 	font-weight: 700;
 	padding: 1rem 1rem 0;
+	text-align: center;
 }
 
 main {
+	max-width: 700px;
 	padding: 1rem;
 	p {
 		margin-bottom: 1rem;
@@ -27,12 +35,12 @@ main {
 }
 
 .leerdoel {
-    h2 {
-        text-align: center;
-    }
-    mark{
-        background-color: var(--red-mark);
-    }
+	h2 {
+		text-align: center;
+	}
+	mark {
+		background-color: var(--red-mark);
+	}
 	p {
 		margin-top: 1rem;
 		line-height: 1.5;
@@ -42,8 +50,8 @@ main {
 		color: var(--pencil-text);
 
 		p {
-            margin: 0;
-            text-align: right;
+			margin: 0;
+			text-align: right;
 			&::before {
 				content: "";
 				display: inline-block;
